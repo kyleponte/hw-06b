@@ -30,7 +30,7 @@ def classifyTriangle(a,b,c):
 
     # verify that all 3 inputs are integers
     # Python's "isinstance(object,type) returns True if the object is of the specified type
-    if not(isinstance(a,int) or  not(isinstance(b,int)) or  not(isinstance(c,int))):
+    if not(isinstance(a,int) and (isinstance(b,int)) and (isinstance(c,int))):
         return 'InvalidInput'
 
     # require that the input values be >= 0 and <= 200
